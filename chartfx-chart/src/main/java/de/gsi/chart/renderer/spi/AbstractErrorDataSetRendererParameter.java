@@ -236,6 +236,14 @@ public abstract class AbstractErrorDataSetRendererParameter<R extends AbstractEr
     }
 
     /**
+     * 
+     * @return whether all or only the DataSets attached to the Renderer shall be drawn 
+     */
+    public boolean isDrawChartDataSets() {
+        return drawChartDataSetsProperty().get();
+    }
+
+    /**
      * @return true if point reduction is on (default) else false.
      */
     public boolean isDrawMarker() {
